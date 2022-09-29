@@ -14,18 +14,22 @@
 
 <script>
   
-   function randomColor () {
+   function randomColor() {
     const r = Math.floor(Math.random() * 255)
     const g = Math.floor(Math.random() * 255)
     const b = Math.floor(Math.random() * 255)
     return `rgb(${r}, ${g}, ${b})`
   }
   
+  function updateBox() {
+    box.style.backgroundColor = randomColor()
+    document.body.style.backgroundColor = randomColor()
+  }
+  
   const box = document.querySelector('#box')
   box.innerText = 'okay so here\'s a color'
   box.style.color = 'white'
-  box.style.backgroundColor = randomColor()
-  
-  box.addEventListener()
+
+  box.addEventListener('click', updateBox)
   
 </script>
