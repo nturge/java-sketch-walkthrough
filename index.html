@@ -12,19 +12,15 @@
 
 <script>
 
- let names = ['suzie', 'eric', 'glasgow']
- let nick = {
-   location: 'SAIC',
-   age: '20',
-   eyes: 'green',
-   favFruits: ['bananas', 'oranges', 'strawberries'],
-   limbs: { arms: 2, legs: 2 }
- }
+let x = 100
+x = x + 2 
+if (x > 100) {
+  x= 'yep'
+} else if (x > 30){
+  x = 'almost'
+} else {
+  x = 'not even close'
+}
   
-  
-  console.log(nick.favFruits[1])
-  console.log(typeof nick.age)
-  console.log(nick.age)
-  console.log(names[2])
-  console.log(names.length)
+  console.log(x)
 </script>
