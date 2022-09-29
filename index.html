@@ -12,20 +12,19 @@
 
 <script>
 
-  let r = 255 // number
-  let g = 0
-  let b = 0
-  
-  let clr =`rgb(${r}, ${g}, ${b})` // string
-  
-  let age = 21
-  let greeting =`hi i'm ${age}` // string
-  
-  let awake = false // boolean - a statement thats either true or false
-  
-  let x // undefined - variable exists, the bucket is here but the bucket is empty
+ let names = ['suzie', 'eric', 'glasgow']
+ let nick = {
+   location: 'SAIC',
+   age: '20',
+   eyes: 'green',
+   favFruits: ['bananas', 'oranges', 'strawberries'],
+   limbs: { arms: 2, legs: 2 }
+ }
   
   
-  
-  console.log(typeof r)
+  console.log(nick.favFruits[1])
+  console.log(typeof nick.age)
+  console.log(nick.age)
+  console.log(names[2])
+  console.log(names.length)
 </script>
